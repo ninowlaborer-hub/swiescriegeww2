@@ -1,0 +1,100 @@
+name: swisscierge
+description: AI-powered daily routine assistant with Swiss precision
+publish_to: 'none'
+version: 1.0.6+1
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^3.0.3
+  riverpod_annotation: ^3.0.0
+
+  # Local Database (Offline-first)
+  drift: ^2.29.0
+  path_provider: ^2.1.0
+  path: ^1.8.3
+  sqlcipher_flutter_libs: ^0.6.0
+
+  # HTTP Client (for weather APIs only)
+  dio: ^5.4.0
+
+  # Routing
+  go_router: ^17.0.0
+
+  # Connectivity
+  connectivity_plus: ^7.0.0
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  webview_flutter: ^4.4.2
+
+  # Location Services
+  geolocator: ^14.0.2
+  permission_handler: ^12.0.1
+
+  # File Sharing
+  share_plus: ^12.0.1
+
+  # Utilities
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  intl: ^0.20.2
+  uuid: ^4.3.3
+  crypto: ^3.0.3
+
+  # UI Components
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.8
+  riverpod_generator: ^3.0.0
+  drift_dev: ^2.29.0
+  freezed: ^3.2.3
+  json_serializable: ^6.7.1
+
+  # Testing
+  mocktail: ^1.0.3
+  integration_test:
+    sdk: flutter
+  alchemist: ^0.13.0
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+  # App Icon Generation
+  flutter_launcher_icons: ^0.14.1
+
+# Flutter Launcher Icons Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpg"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo.jpg"
+  remove_alpha_ios: true
+  # Optional: Generate different sizes
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/ml/
+
+  # Fonts
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: fonts/Inter-Regular.ttf
+  #       - asset: fonts/Inter-Bold.ttf
+  #         weight: 700

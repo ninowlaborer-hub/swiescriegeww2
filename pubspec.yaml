@@ -1,7 +1,7 @@
 name: swisscierge
 description: AI-powered daily routine assistant with Swiss precision
 publish_to: 'none'
-version: 1.0.6+1
+version: 1.0.7+1
 
 environment:
   sdk: '>=3.8.0 <4.0.0'
